@@ -1,0 +1,281 @@
+<?xml version='1.0'?>
+<!--
+  Gazebo ROS differential drive plugin 
+
+  Try sending commands:
+
+    ros2 topic pub /demo/cmd_vel geometry_msgs/Twist '{linear: {x: 0.05}}' -1
+
+    ros2 topic pub /demo/cmd_vel geometry_msgs/Twist '{angular: {z: 0.1}}' -1
+
+  Try listening to odometry:
+
+    ros2 topic echo /demo/odom
+
+  Try listening to TF:
+
+    ros2 run tf2_ros tf2_echo odom chassis
+
+    ros2 run tf2_ros tf2_echo chassis right_wheel
+
+    ros2 run tf2_ros tf2_echo chassis left_wheel
+-->
+<sdf version='1.4'>
+  <model name="robot">  
+     <!-- If true, physics engine will ignore -->
+     <static>false</static>    
+     
+       <!-- Add the rectangular base of the robot -->
+       <link name='chassis'>
+       
+         <!--Position of the center will be: -->
+         <!--x=0 meters, y=0 meters, z=0.1 meters-->
+         <!--Orientation of the center will be: -->
+         <!--Roll=0 rad, Pitch=0 rad, Yaw=0 rad -->
+         <pose>0 0 .04 0 0 0</pose>
+
+           <!-- Specify the shape for collisions -->
+           <collision name='collision'>
+             <geometry>
+               <box>
+                 <!-- Box is 0.6 meters in length -->
+                 <!-- 0.2 meters in width -->
+                 <!-- 0.4 meters in height -->
+                 <size>.6 .2 .1</size>
+               </box>
+             </geometry>
+           </collision>
+
+           <!-- Specify the shape for visualization -->
+           <visual name='visual'>
+             <pose> 0 0 0.02 0 0 0 </pose>
+             <material>
+            <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Blue</name>
+            </script>
+            </material>
+             <geometry>
+                 <!-- <uri>model://warehouse_robot/meshes/robot.dae</uri>
+                 <scale>0.9 0.5 0.5 </scale> -->
+                 <box>
+                    <size>.6 .2 .1</size>
+                </box>
+             </geometry>
+           </visual>                  
+       </link>      
+
+       <!-- Add the left wheel -->     
+       <link name="left_wheel">
+         <pose>0.12 0.19 0.1 0 1.5707 1.5707</pose>
+         <collision name="collision">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </collision>
+         <visual name="visual">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </visual>
+       </link>  
+ 
+       <!-- Add the right wheel -->      
+       <link name="right_wheel">
+         <pose>0.12 -0.19 0.1 0 1.5707 1.5707</pose>
+         <collision name="collision">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </collision>
+         <visual name="visual">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </visual>
+       </link>
+
+       <!-- Add the BACK left wheel -->      
+       <link name="left_wheel_back">
+         <pose>-0.22 0.19 0.1 0 1.5707 1.5707</pose>
+         <collision name="collision">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </collision>
+         <visual name="visual">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </visual>
+       </link>
+
+       <!-- Add the BACK right wheel -->      
+       <link name="right_wheel_back">
+         <pose>-0.22 -0.19 0.1 0 1.5707 1.5707</pose>
+         <collision name="collision">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </collision>
+         <visual name="visual">
+           <geometry>
+             <cylinder>
+               <radius>.12</radius>
+               <length>.08</length>
+             </cylinder>
+           </geometry>
+         </visual>
+       </link>
+
+        <!-- *********************** DEPTH CAMERA ******************************  -->
+        <!-- The depth camera (e.g. Intel Realsense camera). -->
+        <link name="camera_depth_frame">
+          <pose>0.15 0 0.2 0 0 0</pose>
+        </link>
+        
+        <link name="camera_link">
+          <pose>0.15 0 0.2 0 0 0</pose>
+          
+          <visual name="camera_visual">
+            <pose>-0.005 0 0 0 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.015 0.08 0.022</size>
+              </box>
+            </geometry>
+            <material>
+              <ambient>0 0 0 1.0</ambient>
+              <diffuse>0 0 0 1.0</diffuse>
+              <specular>0.0 0.0 0.0 1.0</specular>
+              <emissive>0.0 0.0 0.0 1.0</emissive>
+            </material>
+          </visual>    
+          
+          <sensor name="depth_camera" type="camera">
+            <always_on>true</always_on>
+            <visualize>false</visualize>
+            <update_rate>5</update_rate>
+            <camera name="camera">
+              <horizontal_fov>1.02974</horizontal_fov>
+              <image>
+                <width>640</width>
+                <height>480</height>
+                <format>R8G8B8</format>
+              </image>
+              <clip>
+                <near>0.02</near>
+                <far>10</far>
+              </clip>
+              <noise>
+                <type>gaussian</type>
+                <!-- Noise is sampled independently per pixel on each frame.
+                    That pixel's noise value is added to each of its color
+                      channels, which at that point lie in the range [0,1]. -->
+                <mean>0.0</mean>
+                <stddev>0.007</stddev>
+              </noise>
+            </camera>
+            <plugin name="depth_camera_controller" filename="libgazebo_ros_camera.so">
+              <camera_name>depth_camera</camera_name>
+              <imageTopicName>image_raw</imageTopicName>
+              <frame_name>camera_depth_frame</frame_name>
+              <hack_baseline>0</hack_baseline>
+              <min_depth>0.001</min_depth>
+            </plugin>
+          </sensor>
+        </link>
+      
+       
+      
+       <!-- Add motor for the left wheel -->
+       <joint type="revolute" name="left_wheel_hinge">
+         <pose>0 0 -0.03 0 0 0</pose>
+         <child>left_wheel</child>
+         <parent>chassis</parent>
+         <axis>
+           <xyz>0 1 0</xyz>
+         </axis>
+       </joint>
+
+       <!-- Add motor for the right wheel -->
+       <joint type="revolute" name="right_wheel_hinge">
+         <pose>0 0 0.03 0 0 0</pose>
+         <child>right_wheel</child>
+         <parent>chassis</parent>
+         <axis>
+           <xyz>0 1 0</xyz>
+         </axis>
+       </joint>
+
+       <!-- Add motor for the back left wheel -->
+       <joint type="fixed" name="left_back_wheel_hinge">
+         <pose>0 0 0 0 0 0</pose>
+         <child>left_wheel_back</child>
+         <parent>chassis</parent>
+         <axis>
+           <xyz>0 1 0</xyz>
+         </axis>
+       </joint>
+
+       <!-- Add motor for the back right wheel -->
+       <joint type="fixed" name="right_back_wheel_hinge">
+         <pose>0 0 0 0 0 0</pose>
+         <child>right_wheel_back</child>
+         <parent>chassis</parent>
+         <axis>
+           <xyz>0 1 0</xyz>
+         </axis>
+       </joint>
+      
+       <!-- Controls the differential drive robot -->
+       <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+         <ros>
+           <namespace>/demo</namespace>
+           <remapping>cmd_vel:=cmd_vel</remapping>
+           <remapping>odom:=odom</remapping>
+         </ros>
+
+         <!-- wheels -->
+         <left_joint>left_wheel_hinge</left_joint>
+         <right_joint>right_wheel_hinge</right_joint>
+
+         <!-- kinematics -->
+         <wheel_separation>0.26</wheel_separation>
+         <wheel_diameter>0.2</wheel_diameter>
+
+         <!-- limits -->
+         <max_wheel_torque>20</max_wheel_torque>
+         <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+         <!-- output -->
+         <publish_odom>true</publish_odom>
+         <publish_odom_tf>true</publish_odom_tf>
+         <publish_wheel_tf>true</publish_wheel_tf>
+
+         <odometry_frame>odom</odometry_frame>
+         <robot_base_frame>chassis</robot_base_frame>
+       </plugin>    
+  </model>
+</sdf>
