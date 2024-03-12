@@ -27,6 +27,8 @@ setup(
         # Path to the mobile robot sdf file
         (os.path.join('share', package_name,'models/robot/'), glob('./models/robot/*')),
 
+        (os.path.join('share', package_name,'models/new_robot/'), glob('./models/new_robot/*')),
+
         # Path to the mobile robot sdf file
         # (os.path.join('share', package_name,'models/TinyBot/'), glob('./models/TinyBot/*')),
 

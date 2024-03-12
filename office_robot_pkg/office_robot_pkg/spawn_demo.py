@@ -20,7 +20,7 @@ def main():
     # Get the file path for the robot model
     sdf_file_path = os.path.join(
         get_package_share_directory("office_robot_pkg"), "models",
-        "robot", "model.sdf")
+        "new_robot", "model.sdf")
         
     # Create the node
     node = rclpy.create_node("entity_spawner")
@@ -39,7 +39,7 @@ def main():
     # Get path to the robot
     sdf_file_path = os.path.join(
         get_package_share_directory("office_robot_pkg"), "models",
-        "robot", "model.sdf")
+        "new_robot", "model.sdf")
 
     # Show file path
     print(f"robot_sdf={sdf_file_path}")

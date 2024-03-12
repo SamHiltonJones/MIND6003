@@ -83,7 +83,7 @@
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
-    <!-- A simple warehouse -->
+    <!-- A simple room -->
     <include>
       <uri>model://room_walls</uri>
       <pose>2.4 -2.1 0 0 0 0</pose>
