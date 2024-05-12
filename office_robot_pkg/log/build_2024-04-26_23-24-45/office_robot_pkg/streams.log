@@ -1,0 +1,30 @@
+[0.588s] Invoking command in '/home/sam/tut/MIND6003/office_robot_pkg': PYTHONPATH=/home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/prefix_override:/home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/office_robot_pkg build --build-base /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build install --record /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/install.log --install-scripts $base/lib/office_robot_pkg --single-version-externally-managed install_data
+[0.800s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.800s]   warnings.warn(
+[0.807s] running egg_info
+[0.807s] writing build/office_robot_pkg/office_robot_pkg.egg-info/PKG-INFO
+[0.807s] writing dependency_links to build/office_robot_pkg/office_robot_pkg.egg-info/dependency_links.txt
+[0.808s] writing entry points to build/office_robot_pkg/office_robot_pkg.egg-info/entry_points.txt
+[0.808s] writing requirements to build/office_robot_pkg/office_robot_pkg.egg-info/requires.txt
+[0.808s] writing top-level names to build/office_robot_pkg/office_robot_pkg.egg-info/top_level.txt
+[0.810s] reading manifest file 'build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+[0.811s] writing manifest file 'build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+[0.811s] running build
+[0.811s] running build_py
+[0.811s] copying office_robot_pkg/relocal.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+[0.812s] running install
+[0.812s] running install_lib
+[0.813s] copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/relocal.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+[0.813s] byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/relocal.py to relocal.cpython-310.pyc
+[0.814s] running install_data
+[0.815s] running install_egg_info
+[0.816s] removing '/home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.816s] Copying build/office_robot_pkg/office_robot_pkg.egg-info to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info
+[0.817s] running install_scripts
+[0.833s] Installing error_calculator script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+[0.833s] Installing point_cloud_processor script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+[0.833s] Installing relocal script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+[0.833s] Installing robot_controller script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+[0.833s] Installing spawn_demo script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+[0.834s] writing list of installed files to '/home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/install.log'
+[0.852s] Invoked command in '/home/sam/tut/MIND6003/office_robot_pkg' returned '0': PYTHONPATH=/home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/prefix_override:/home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/office_robot_pkg build --build-base /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build install --record /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/install.log --install-scripts $base/lib/office_robot_pkg --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+  File "/home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/relocal.py", line 66
+    except Exception as e:
+SyntaxError: expected 'except' or 'finally' block
+

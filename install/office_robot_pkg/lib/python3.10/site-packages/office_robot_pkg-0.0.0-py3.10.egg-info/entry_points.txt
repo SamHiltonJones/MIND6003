@@ -1,0 +1,13 @@
+[console_scripts]
+det_diff = office_robot_pkg.det_diff:main
+error_calculator = office_robot_pkg.error_calculator:main
+filter_pc = office_robot_pkg.filter_pc:main
+map_updater = office_robot_pkg.updating_map:main
+point_cloud_processor = office_robot_pkg.point_cloud_processor:main
+relocal = office_robot_pkg.relocal:main
+robot_controller = office_robot_pkg.robot_controller:main
+saver = office_robot_pkg.saver:main
+settings = office_robot_pkg.settings:main
+spawn_demo = office_robot_pkg.spawn_demo:main
+video_capture = office_robot_pkg.video_capture:main
+

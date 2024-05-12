@@ -1,0 +1,33 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+writing ../build/office_robot_pkg/office_robot_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/office_robot_pkg/office_robot_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/office_robot_pkg/office_robot_pkg.egg-info/entry_points.txt
+writing requirements to ../build/office_robot_pkg/office_robot_pkg.egg-info/requires.txt
+writing top-level names to ../build/office_robot_pkg/office_robot_pkg.egg-info/top_level.txt
+reading manifest file '../build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg
+running install
+running install_lib
+copying /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+byte-compiling /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/point_cloud_processor.py to point_cloud_processor.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/office_robot_pkg/office_robot_pkg.egg-info to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing det_diff script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing error_calculator script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing filter_pc script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing map_updater script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing point_cloud_processor script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing relocal script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing robot_controller script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing saver script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing settings script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+Installing spawn_demo script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+writing list of installed files to '/home/sam/tut/MIND6003/build/office_robot_pkg/install.log'

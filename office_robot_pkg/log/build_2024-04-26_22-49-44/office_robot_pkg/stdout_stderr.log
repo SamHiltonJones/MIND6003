@@ -1,0 +1,67 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating build/office_robot_pkg/office_robot_pkg.egg-info
+writing build/office_robot_pkg/office_robot_pkg.egg-info/PKG-INFO
+writing dependency_links to build/office_robot_pkg/office_robot_pkg.egg-info/dependency_links.txt
+writing entry points to build/office_robot_pkg/office_robot_pkg.egg-info/entry_points.txt
+writing requirements to build/office_robot_pkg/office_robot_pkg.egg-info/requires.txt
+writing top-level names to build/office_robot_pkg/office_robot_pkg.egg-info/top_level.txt
+writing manifest file 'build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build
+creating /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib
+creating /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/error_calculator.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/relocal_old.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/__init__.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/relocal_old2.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/relocal.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/spawn_demo.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/robot_controller.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+copying office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg
+running install
+running install_lib
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/error_calculator.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/relocal_old.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/__init__.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/relocal_old2.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/relocal.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/spawn_demo.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/robot_controller.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+copying /home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/build/lib/office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/error_calculator.py to error_calculator.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/relocal_old.py to relocal_old.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/relocal_old2.py to relocal_old2.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/relocal.py to relocal.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/spawn_demo.py to spawn_demo.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/robot_controller.py to robot_controller.cpython-310.pyc
+byte-compiling /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/point_cloud_processor.py to point_cloud_processor.cpython-310.pyc
+running install_data
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/launch
+copying launch/gazebo_world.launch.py -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/launch
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/worlds
+copying ./worlds/office.world -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/worlds/
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/models
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/models/new_robot
+copying ./models/new_robot/model.sdf -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/models/new_robot/
+copying ./models/new_robot/model.config -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/models/new_robot/
+copying ./worlds/office.world -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/models/
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/point_cloud
+creating /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/point_cloud/original_pcds
+copying point_cloud/original_pcds/compile_map.pcd -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/point_cloud/original_pcds
+copying point_cloud/original_pcds/compile_map_final.pcd -> /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/share/office_robot_pkg/point_cloud/original_pcds
+running install_egg_info
+Copying build/office_robot_pkg/office_robot_pkg.egg-info to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing error_calculator script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+Installing point_cloud_processor script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+Installing relocal script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+Installing robot_controller script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+Installing spawn_demo script to /home/sam/tut/MIND6003/office_robot_pkg/install/office_robot_pkg/lib/office_robot_pkg
+writing list of installed files to '/home/sam/tut/MIND6003/office_robot_pkg/build/office_robot_pkg/install.log'

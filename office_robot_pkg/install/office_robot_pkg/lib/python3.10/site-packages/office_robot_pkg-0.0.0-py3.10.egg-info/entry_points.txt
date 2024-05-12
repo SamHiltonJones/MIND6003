@@ -1,0 +1,7 @@
+[console_scripts]
+error_calculator = office_robot_pkg.error_calculator:main
+point_cloud_processor = office_robot_pkg.point_cloud_processor:main
+relocal = office_robot_pkg.relocal:main
+robot_controller = office_robot_pkg.robot_controller:main
+spawn_demo = office_robot_pkg.spawn_demo:main
+

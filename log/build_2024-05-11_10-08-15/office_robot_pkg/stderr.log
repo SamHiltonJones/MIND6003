@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+  File "/home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/updating_map.py", line 159
+    self.visualise_point_clouds3(array1 = None, array2 = None, self.whole_map)
+                                                                             ^
+SyntaxError: positional argument follows keyword argument
+

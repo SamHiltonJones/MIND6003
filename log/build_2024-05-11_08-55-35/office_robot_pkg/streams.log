@@ -1,0 +1,42 @@
+[0.480s] Invoking command in '/home/sam/tut/MIND6003/office_robot_pkg': PYTHONPATH=/home/sam/tut/MIND6003/build/office_robot_pkg/prefix_override:/home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/office_robot_pkg build --build-base /home/sam/tut/MIND6003/build/office_robot_pkg/build install --record /home/sam/tut/MIND6003/build/office_robot_pkg/install.log --install-scripts $base/lib/office_robot_pkg --single-version-externally-managed install_data
+[0.642s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.643s]   warnings.warn(
+[0.648s] running egg_info
+[0.648s] writing ../build/office_robot_pkg/office_robot_pkg.egg-info/PKG-INFO
+[0.649s] writing dependency_links to ../build/office_robot_pkg/office_robot_pkg.egg-info/dependency_links.txt
+[0.649s] writing entry points to ../build/office_robot_pkg/office_robot_pkg.egg-info/entry_points.txt
+[0.649s] writing requirements to ../build/office_robot_pkg/office_robot_pkg.egg-info/requires.txt
+[0.649s] writing top-level names to ../build/office_robot_pkg/office_robot_pkg.egg-info/top_level.txt
+[0.650s] reading manifest file '../build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+[0.652s] writing manifest file '../build/office_robot_pkg/office_robot_pkg.egg-info/SOURCES.txt'
+[0.652s] running build
+[0.652s] running build_py
+[0.652s] copying office_robot_pkg/updating_map.py -> /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg
+[0.652s] copying office_robot_pkg/settings.py -> /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg
+[0.652s] copying office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg
+[0.653s] running install
+[0.653s] running install_lib
+[0.653s] copying /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg/updating_map.py -> /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+[0.654s] copying /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg/settings.py -> /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+[0.654s] copying /home/sam/tut/MIND6003/build/office_robot_pkg/build/lib/office_robot_pkg/point_cloud_processor.py -> /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg
+[0.654s] byte-compiling /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/updating_map.py to updating_map.cpython-310.pyc
+[0.656s] byte-compiling /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/settings.py to settings.cpython-310.pyc
+[0.657s] byte-compiling /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg/point_cloud_processor.py to point_cloud_processor.cpython-310.pyc
+[0.658s] running install_data
+[0.658s] copying launch/gazebo_world.launch.py -> /home/sam/tut/MIND6003/install/office_robot_pkg/share/office_robot_pkg/launch
+[0.658s] running install_egg_info
+[0.659s] removing '/home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.659s] Copying ../build/office_robot_pkg/office_robot_pkg.egg-info to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages/office_robot_pkg-0.0.0-py3.10.egg-info
+[0.660s] running install_scripts
+[0.674s] Installing det_diff script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing error_calculator script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing filter_pc script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing map_updater script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing point_cloud_processor script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing relocal script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing robot_controller script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing saver script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.675s] Installing settings script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.676s] Installing spawn_demo script to /home/sam/tut/MIND6003/install/office_robot_pkg/lib/office_robot_pkg
+[0.676s] writing list of installed files to '/home/sam/tut/MIND6003/build/office_robot_pkg/install.log'
+[0.690s] Invoked command in '/home/sam/tut/MIND6003/office_robot_pkg' returned '0': PYTHONPATH=/home/sam/tut/MIND6003/build/office_robot_pkg/prefix_override:/home/sam/tut/MIND6003/install/office_robot_pkg/lib/python3.10/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/office_robot_pkg build --build-base /home/sam/tut/MIND6003/build/office_robot_pkg/build install --record /home/sam/tut/MIND6003/build/office_robot_pkg/install.log --install-scripts $base/lib/office_robot_pkg --single-version-externally-managed install_data
